@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sekar.lab</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/72a4b5e161.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo"><span>sekar</span>.lab</div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Work with Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-ellipsis-vertical" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Welcome to</p>
+                <h1><span>sekar</span>.lab</h1>
+                <p><i>Where Learning Meets Doing.</i></p>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/About-pic.png" alt="About Me Picture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Hi, I am Sekar!</h1>
+                    <p><span>sekar</span>.lab is my space for growth and sharing—a journey of constant self-improvement. Join me as we explore the worlds of Data Science, Web Development, and insightful Non-Fiction Book Reviews.</p>
+                    <p>Thank you for visiting and being part of this evolving story!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Book Blogging</span><br>Regular, concise summaries and reviews of non-fiction books.</li>
+                            <li><span>Data Analysis Visualization</span><br>Python-based data insights and visual presentations.</li>
+                            <li><span>Biomedical Research</span><br>Cancer research design and execution.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Researcher</span><br>Investigating clinically used and on-clinical trial cancer drugs.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Uppsala University, Sweden</span><br>Master of Medical Science</li>
+                            <li><span>Universitas Gadjah Mada, Indonesia</span><br>Licensed Pharmacist</li>
+                            <li><span>Universitas Gadjah Mada, Indonesia</span><br>Bachelor of Pharmacy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/apple-health-vis.png">
+                    <div class="layer">
+                        <h3>Visualizing Apple Health Data with Python: A Descriptive Approach</h3>
+                        <p>By using Python, we have the opportunity to visualize personalized charts depicting the health information in Apple Health.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/extract-apple-health.png">
+                    <div class="layer">
+                        <h3>How to Extract and Clean Apple Health Data with Python?</h3>
+                        <p>By using Python, we import and fix Apple Health data to make it presentable in visualization and analysis processes.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/run-performance.png">
+                    <div class="layer">
+                        <h3>Using Smartwatch Data to Improve Running Performance</h3>
+                        <p>Garmin data analysis gives insights on current performance and how to plan and improve running training program.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Work with Me</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-book"></i>
+                    <h2>Book Review</h2>
+                    <p>I love books! Especially non-fiction about science, self-help, and health. Want to know what kind of books I review? Check out my book review policy.</p>
+                    <a href="https://sekarwrites.com/" target="_blank">My Book Blog</a>
+                    <a href="https://sekarwrites.com/book-review-policy/" target="_blank">Book Review Policy</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h2>Data Visualization and Analysis</h2>
+                    <p>Data can be overwhelming, right? But I can help you make sense of it. Using Python, I turn complex data into easy-to-understand visuals. If you need help with data visualization and analysis, I'm here for you.</p>
+                    <a href="#portfolio">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <h2>Literature Research</h2>
+                    <p>My background is in pharmacy and biomedicine, so if you need help with research in these areas, I'm your person. From data analysis to creating scientific content, I can help make sure your project is clear and engaging.</p>
+                    <a href="#portfolio">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-desktop"></i>
+                    <h2>Web Development</h2>
+                    <p>Thinking of having your own portfolio website? I'm here to help! Together, we can create a website that's just right for you, with your own personal style and design. Let's make your online presence awesome!</p>
+                    <a href="#portfolio">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>hello@sekarwrites.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/learnandlongevity/" class="href" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sekarsedya/" class="href" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="4" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright ©2024 sekarsedya.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxhk3YldqHeKmVzMlV-IxS2gB0v1pqWzHxLwSyQOcxmevC-2zt5hcxrlnLaLiVzA8rX/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
